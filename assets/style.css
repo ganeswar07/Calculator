@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #101c52, #0c1940);
+}
+.calculator {
+  width: 435px;
+  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(191, 188, 188, 0.525);
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.inputbox {
+  padding: 5px;
+}
+input {
+  height: 60px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px rgba(151, 148, 148, 0.253);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: end;
+  background-color: lightgray;
+}
+input::placeholder {
+  color: #101c52;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+}
+button {
+  width: 100%;
+  height: 55px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+button:hover {
+  background-color: rgb(42, 42, 93);
+  color: #dad2d2;
+}
+.operatorBtn {
+  color: rgb(215, 112, 10);
+  background-color: lightgray;
+}
+.number {
+  background-color: lightgray;
+}
+.equalBtn {
+  background-color: rgb(215, 112, 10);
+  color: white;
+  grid-column: span 2;
+}
